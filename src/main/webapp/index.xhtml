@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+<head>
+    <title>Лаба3</title>
+
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
+    <script type="text/javascript" src="script/clock.js" defer="defer"/>
+</head>
+<body>
+<div class="content">
+    <h1 class="clock" id="clock-time"></h1>
+    <h3 class="clock-date" id="clock-date"></h3>
+    <div class="info-panel">
+        <div class="start-panel">
+            <img src="assets/main.gif" width="300" class="logo shadow" alt="logo"/>
+            <h:button type="button" id="start-button" class="round confirm-colors material-icons"
+                      outcome="toMain" value="play_arrow"/>
+        </div>
+        <div class="invert-colors box-visual shadow" style="margin: 25px">
+        </div>
+    </div>
+</div>
+</body>
+</html>

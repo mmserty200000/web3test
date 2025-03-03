@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="jakarta.faces.html" xmlns:ui="jakarta.faces.facelets"
+    xmlns:f="jakarta.faces.core" xmlns:p="primefaces">
+<f:view contentType="text/html;charset=UTF-8" encoding="UTF-8">
+    <h:head>
+        <title>mmserty lab</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </h:head>
+    <h:body>
+        <div class="credits-container">
+            Черепанов Иван 409830
+        </div>
+        <div class="top-content-container">
+            <div class="user_input_container">
+                <h:form id="pointForm">
+                    <div class="input-container">
+                        <h:outputLabel styleClass="input-label" value="X:" />
+                        <p:selectOneRadio id="xValue" value="#{UserIOBean.xValue}">
+                            <f:selectItem itemValue="-3" itemLabel="-3" />
+                            <f:selectItem itemValue="-2" itemLabel="-2" />
+                            <f:selectItem itemValue="-1" itemLabel="-1" />
+                            <f:selectItem itemValue="0" itemLabel="0" />
+                            <f:selectItem itemValue="1" itemLabel="1" />
+                            <f:selectItem itemValue="2" itemLabel="2" />
+                            <f:selectItem itemValue="3" itemLabel="3" />
+                            <f:selectItem itemValue="4" itemLabel="4" />
+                            <f:selectItem itemValue="5" itemLabel="5" />
+                        </p:selectOneRadio>
+                    </div>
+
+                    <p:commandButton value="Send" action="#{UserIOBean.sendPoint()}"
+                        style="width: 100%; margin-top: 20px;" process="@form" update="pointForm" />
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</f:view>
+
+</html>
