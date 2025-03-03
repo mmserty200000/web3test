@@ -19,18 +19,12 @@ import entity.Point;
 
 @Named
 @SessionScoped
-
+@Getter
+@Setter
 public class UserIOBean implements Serializable {
-    @Getter
-    @Setter
+
     private String xValue;
-
-    @Getter
-    @Setter
     private String yValue;
-
-    @Getter
-    @Setter
     private String rValue;
 
 

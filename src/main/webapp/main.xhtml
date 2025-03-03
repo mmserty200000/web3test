@@ -19,7 +19,7 @@
                 <h:form id="pointForm">
                     <div class="input-container">
                         <h:outputLabel styleClass="input-label" value="X:" />
-                        <p:selectOneRadio id="xValue" value="#{UserIOBean.xValue}">
+                        <p:selectOneRadio id="xValue" value="#{userIOBean.xValue}">
                             <f:selectItem itemValue="-3" itemLabel="-3" />
                             <f:selectItem itemValue="-2" itemLabel="-2" />
                             <f:selectItem itemValue="-1" itemLabel="-1" />
@@ -32,7 +32,7 @@
                         </p:selectOneRadio>
                     </div>
 
-                    <p:commandButton value="Send" action="#{UserIOBean.sendPoint()}"
+                    <p:commandButton value="Send" action="#{userIOBean.sendPoint()}"
                         style="width: 100%; margin-top: 20px;" process="@form" update="pointForm" />
                 </h:form>
             </div>
